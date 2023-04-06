@@ -2,6 +2,7 @@ package com.example.demo;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
@@ -12,8 +13,11 @@ public class HelloController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
-    private int getNumber(){
+    private int getNumber(TextField cellText){
+        String cellContent = cellText.getText();
+        int cellNumber = Integer.parseInt(cellContent);
 
+        return cellNumber;
     }
 
 }
