@@ -41,7 +41,7 @@ public class HelloApplication extends Application {
 
 
         // Set the title of the Stage
-        primaryStage.setTitle("Grid Example");
+        primaryStage.setTitle("Pseudo Sudoku");
 
         // Set the Scene of the Stage
         primaryStage.setScene(scene);
